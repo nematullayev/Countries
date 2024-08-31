@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countries</title>
+    <link rel="shortcut icon" href="./img/countries.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="header container">
+        <div class="header-left">
+          <h2 class="header-left-title">Where in the world?</h2>
+        </div>
+        <div class="header-rigtht">
+          <button id="dark" class="header-rigtht-btn">
+            <img
+              class="header-rigtht-img"
+              src="./img/dark.svg"
+              alt="Dark-mode"
+            />
+            <strong class="header-rigtht-text">Dark Mode</strong>
+          </button>
+          <button id="light" style="display: none" class="header-rigtht-btn">
+            <img
+              class="header-rigtht-img"
+              src="./img/light.svg"
+              alt="Dark-mode"
+            />
+            <strong class="header-rigtht-text">Light Mode</strong>
+          </button>
+        </div>
+      </header>
+    </div>
+    <div class="header-botom container">
+      <div class="header-botom-left">
+        <button id="btn" class="header-botom-left-btn">
+          <img
+            class="header-botom-left-img"
+            src="./img/search.svg"
+            alt="Search"
+          />
+        </button>
+        <input
+          id="inp"
+          type="text"
+          class="header-botom-left-input"
+          placeholder="Search for a country…"
+        />
+      </div>
+      <div class="header-botom-center">
+        <button id="all">All</button>
+      </div>
+      <div class="header-botom-right">
+        <select name="" id="catigories" class="header-botom-right-select">
+          <option value="All">Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </div>
+    <div class="container">
+      <section class="hero">
+        <template class="template">
+          <div class="one-product">
+            <div class="one-product-top">
+              <img
+                class="one-product-top-img"
+                src="./img/Germany.png"
+                alt="Germany"
+              />
+            </div>
+            <div class="one-product-bottom">
+              <strong class="title">Germany</strong>
+              <p class="pop">
+                Population: <span class="population"> . .</span>
+              </p>
+              <p class="reg">Region: <span class="region"></span></p>
+              <p class="cap">Capital: <span class="capital"></span></p>
+            </div>
+          </div>
+        </template>
+      </section>
+
+      <div style="display: none" class="not-found container">
+        <div class="box">
+          <p>Oops! Location not found!</p>
+          <img src="./img/404.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

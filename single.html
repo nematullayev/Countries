@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./single.css" />
+    <title>Countries</title>
+    <link rel="shortcut icon" href="./img/countries.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="header container">
+        <div class="header-left">
+          <h2 class="header-left-title">Where in the world?</h2>
+        </div>
+        <div class="header-rigtht">
+          <button id="dark" class="header-rigtht-btn">
+            <img
+              class="header-rigtht-img"
+              src="./img/dark.svg"
+              alt="Dark-mode"
+            />
+            <strong class="header-rigtht-text">Dark Mode</strong>
+          </button>
+          <button id="light" style="display: none" class="header-rigtht-btn">
+            <img
+              class="header-rigtht-img"
+              src="./img/light.svg"
+              alt="Dark-mode"
+            />
+            <strong class="header-rigtht-text">Light Mode</strong>
+          </button>
+        </div>
+      </header>
+    </div>
+    <section class="hero container">
+      <div class="hero-top">
+        <a href="./index.html">
+          <button class="hero-top-btn">
+            <img class="arrow" src="./img/call-made.svg" alt="To Back" />
+            <span>Back</span>
+          </button>
+        </a>
+      </div>
+      <div class="hero-all">
+        <div class="hero-left">
+          <img class="img" src="" alt="" />
+        </div>
+        <div class="hero-right">
+          <div class="hero-right-top">
+            <h2 class="title"></h2>
+          </div>
+          <div class="hero-right-center">
+            <div class="hero-right-center-left">
+              <strong class="snativeName hero-right-center-left-text"
+                >Native Name:
+                <p class="native-name"></p
+              ></strong>
+              <strong class="hero-right-center-left-text"
+                >Population:
+                <p class="population"></p>
+              </strong>
+
+              <strong class="hero-right-center-left-text sregion"
+                >Region:
+                <p class="region"></p
+              ></strong>
+
+              <strong class="hero-right-center-left-text ssubRegion">
+                <span>Sub Region:</span>
+                <p class="sub-region"></p>
+              </strong>
+
+              <strong class="hero-right-center-left-text scapital"
+                >Capital:
+                <p class="capital"></p
+              ></strong>
+            </div>
+            <div class="hero-right-center-right">
+              <strong class="hero-right-center-left-text stopLevelDomain"
+                >Top Level Domain:
+                <p class="top-Level-Domain"></p
+              ></strong>
+              <strong class="hero-right-center-left-text scurrencies">
+                Area:
+                <p class="currencies"></p
+              ></strong>
+              <strong class="hero-right-center-left-text slanguages">
+                Time zones:
+                <p class="languages"></p
+              ></strong>
+            </div>
+          </div>
+          <div class="hero-right-bottom">
+            <div>
+              <strong class="near">Border Countries: </strong>
+            </div>
+            <div class="btns">
+              <p class="near-one"></p>
+              <p class="near-second"></p>
+              <p class="near-third"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./single.js"></script>
+  </body>
+</html>
